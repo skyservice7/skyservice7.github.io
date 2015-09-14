@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+	<head>
+		<meta charset="utf-8">
+		<title>SkyService - Услуги промышленных альпинистов Ярославль</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="https://fontastic.s3.amazonaws.com/Yervstkqhkpuxv8CPfvUQm/icons.css" rel="stylesheet">
+		<!--<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/css-bootstrap/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="css/css-bootstrap/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive-tabs.css">
+		<link rel="stylesheet" href="css/bootstrap.vertical-tabs.css">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Sky Service</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<!--<li><a href="#">Главная <span class="sr-only">(current)</span></a></li>-->
+						<li class="active"><a href="services.html">Услуги</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">+7 (910) 968 08 68</a></li>
+					</ul>
+					</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+				
+				<div class="services-page">
+					<div class="container">
+						<h3>Responsive Tabs</h3>
+						<ul class="nav nav-tabs responsive-tabs tabs-left">
+							<li class="active"><a href="#home1">Home</a></li>
+							<li><a href="#profile1">Profile</a></li>
+							<li><a href="#messages1">Messages</a></li>
+							<li><a href="#settings1">Settings</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="home1">
+								<p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, commodi delectus accusamus optio quam odit illum laudantium dolorum nostrum recusandae corporis quo. Veniam, excepturi illo eveniet quas aperiam provident inventore.</p>
+							</div>
+							<div class="tab-pane" id="profile1">
+								<p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, commodi delectus accusamus optio quam odit illum laudantium dolorum nostrum recusandae corporis quo. Veniam, excepturi illo eveniet quas aperiam provident inventore.</p>
+							</div>
+							<div class="tab-pane" id="messages1">
+								<p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, commodi delectus accusamus optio quam odit illum laudantium dolorum nostrum recusandae corporis quo. Veniam, excepturi illo eveniet quas aperiam provident inventore.</p>
+							</div>
+							<div class="tab-pane" id="settings1">
+								<p>4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, commodi delectus accusamus optio quam odit illum laudantium dolorum nostrum recusandae corporis quo. Veniam, excepturi illo eveniet quas aperiam provident inventore.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<script src="scripts/jquery.bootstrap-responsive-tabs.min.js"></script>
+				<!-- Latest compiled and minified JavaScript -->
+				<script src="scripts/js-bootstrap/bootstrap.min.js"></script>
+				<script>
+				$('.responsive-tabs').responsiveTabs({
+				accordionOn: ['xs', 'sm']
+				});
+				</script>
+				<div class="footer">
+					<div class="container">
+						<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="medium" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" data-yashareTheme="counter"></div>
+						<div class="contacts">
+							<div class="phone">
+								<div>+7 915 971 20 16</div>
+								<div>+7 910 968 08 68</div>
+							</div>
+							<div class="mail">
+								<div><a href="mailto:info@skyservice76.ru">info@skyservice76.ru</a></div>
+							</div>
+						</div>
+						<div class="copyright">&copy; SkyService, высотные работы, 2015</div>
+					</div>
+				</div>
+				<!--<script type="text/javascript">
+					$(document).ready(function() {
+						//Vertical Tab
+						$('#parentVerticalTab').easyResponsiveTabs({
+							type: 'vertical', //Types: default, vertical, accordion
+							width: 'auto', //auto or any width like 600px
+							fit: true, // 100% fit in a container
+							closed: 'accordion', // Start closed if in accordion view
+							tabidentify: 'hor_1', // The tab groups identifier
+							activate: function(event) { // Callback function if tab is switched
+								var $tab = $(this);
+								var $info = $('#nested-tabInfo2');
+								var $name = $('span', $info);
+								$name.text($tab.text());
+								$info.show();
+							}
+						});
+					});
+				</script>-->
+			</body>
+		</html>
