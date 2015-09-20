@@ -1,0 +1,93 @@
+/*навигационное меню*/
+.navbar-default{
+    background-color: #28465A;
+    border-color: transparent;
+    margin-bottom: 0;
+    color: #fff;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a{
+    color: inherit;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a:hover{
+    color: #48A2D7;
+}
+.navbar{
+    border-radius: 0;
+}
+
+/*Главная страница*/
+    .welcome-block{
+            background: transparent url("../Content/canvas.png");
+
+    }
+    /*phone-block*/
+        .phone-block{
+            text-align: center;
+            padding: 20px 0 0 0; 
+            color: #fff;
+        }
+            .phone-block a{
+                color: inherit;
+            }
+            .phone-block a:hover{
+                text-decoration: none;
+
+            }
+            .phone-block .phone{
+                font-size: 28px;
+            }
+            .phone-block .feedback{
+            }
+                .phone-block .feedback a{
+                }
+        @media (min-width: 768px){
+            .phone-block{
+                display: none;
+            }
+        }
+    /*jumbotron*/
+    
+        .jumbotron{
+            color: #fff;
+            overflow: visible;
+            background-color: transparent;
+        }
+
+        .btn-tr{
+            color: #fff;
+            background-color: transparent;
+            border-color: #fff;
+        }
+        .btn-tr:hover{
+            background-color: #fff;
+            color: #28465A;
+        }
+    /*social*/
+    .social{
+        background: #F3F3F3;
+        padding: 20px 0;
+    }
+    /*блок контактов на главной*/
+        .contact-info-block{
+            padding: 20px 0;
+        }
+        /*инфографика*/
+            .info-graphics{
+                background: lightsalmon;
+            }
+        /*формы*/
+            .forms-main-page{
+
+            }
+            .ss-secondary-text{
+                font-weight: normal;
+                color: grey;
+            }
+
+
+    footer{
+        background: #28465A;
+        color: #fff;
+    }
