@@ -1,21 +1,44 @@
+/*верхняя часть*/
+    header{
+        padding: 10px;
+    }
+        .logo-image{
+            width: 70px;
+            height: 70px;
+            background-color: #2C4F68;
+            border: 0;
+            border-radius: 50%;
+            float: left;
+        }
+        .logo-name{
+            margin-left: 90px;
+            font-size: 36px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+        .desc{
+            padding-top: 32px;
+            font-size: 16px;
+            text-align: center;
+        }
 /*навигационное меню*/
-.navbar-default{
-    background-color: #28465A;
-    border-color: transparent;
-    margin-bottom: 0;
-    color: #fff;
-}
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav>li>a{
-    color: inherit;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-nav>li>a:hover{
-    color: #48A2D7;
-}
-.navbar{
-    border-radius: 0;
-}
+    .navbar-default{
+        background-color: #28465A;
+        border-color: transparent;
+        margin-bottom: 0;
+        color: #fff;
+    }
+    .navbar-default .navbar-brand,
+    .navbar-default .navbar-nav>li>a{
+        color: inherit;
+    }
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-nav>li>a:hover{
+        color: #48A2D7;
+    }
+    .navbar{
+        border-radius: 0;
+    }
 
 /*Главная страница*/
     .welcome-block{
@@ -23,10 +46,7 @@
 
     }
     /*phone-block*/
-        .phone-block{
-            text-align: center;
-            padding: 20px 0 0 0; 
-            color: #fff;
+        .phone-block{ 
         }
             .phone-block a{
                 color: inherit;
@@ -41,12 +61,7 @@
             .phone-block .feedback{
             }
                 .phone-block .feedback a{
-                }
-        @media (min-width: 768px){
-            .phone-block{
-                display: none;
-            }
-        }
+                }        
     /*jumbotron*/
     
         .jumbotron{
@@ -59,6 +74,8 @@
             color: #fff;
             background-color: transparent;
             border-color: #fff;
+            border-width: 2px;
+            border-radius: 0;
         }
         .btn-tr:hover{
             background-color: #fff;
@@ -72,20 +89,50 @@
     /*блок контактов на главной*/
         .contact-info-block{
             padding: 20px 0;
+            background-color: #59819C;
         }
         /*инфографика*/
             .info-graphics{
                 background: lightsalmon;
             }
         /*формы*/
-            .forms-main-page{
-
+            .forms{
+                background: #fff;
+                padding: 0 0 20px 0;
+                border: 5px solid #28465A;
             }
             .ss-secondary-text{
                 font-weight: normal;
                 color: grey;
             }
 
+            .btn-tr-inv{
+            color: #28465A;
+            background-color: transparent;
+            border-color: #28465A;
+            border-width: 2px;
+            border-radius: 0;
+            font-weight: bold;
+            }
+            .btn-tr-inv:hover{
+                background-color: #28465A;
+                color: #fff;
+            }
+            /*табы*/
+                .nav-tabs>li{
+                    width: 50%;
+                }
+                .nav-tabs>li>a{
+                    border-radius: 0;
+                    text-align: center;
+                    font-size: 18px;
+                }
+                .tab-content>.tab-pane{
+                    padding: 20px;
+                }
+            .ss-required-asterisk{
+                color: red;
+            }
 
     footer{
         background: #28465A;
