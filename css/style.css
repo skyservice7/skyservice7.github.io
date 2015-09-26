@@ -1,6 +1,6 @@
 /*верхняя часть*/
-    header{
-        padding: 10px;
+    .page-top{
+        padding: 10px 0;
     }
         .logo-image{
             width: 70px;
@@ -138,3 +138,44 @@
         background: #28465A;
         color: #fff;
     }
+
+    /*услуги на главной*/
+        .services{
+            padding-top: 20px;
+        }
+        .services .block-container{
+/*            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+*/            border: 0px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+            .services .block-container:hover{
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+            }
+            .services p{
+                background: #fff;
+                padding: 5px 10px 15px;
+            }
+            .services header{
+                color: #fff;
+                height: 100%;
+                border: 0px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                overflow: hidden;
+            }
+            .bg-1{
+                background: url("../content/003.jpg");
+                background-size: cover;
+            }
+            .services header a{
+/*                margin: 0;
+                padding: 24px 10px;
+*/                color: inherit;
+            }
+            .blackout{
+                background: rgba(0, 0, 0, 0.5);
+                width: 100%;
+                padding: 10px;
+            }
