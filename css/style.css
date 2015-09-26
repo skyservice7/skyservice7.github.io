@@ -42,9 +42,18 @@
 
 /*Главная страница*/
     .welcome-block{
-            background: transparent url("../content/canvas.png");
-
+            background: url("../content/f.jpg");
+            height: 300px;
+            background-size: cover;
+            padding: 20px;
+            color: #fff;
+            position: relative;
     }
+        .welcome-block h1{
+            position: absolute;
+            bottom: 40px;
+            width: 60%;
+        }
     /*phone-block*/
         .phone-block{ 
         }
@@ -134,15 +143,24 @@
             .ss-required-asterisk{
                 color: red;
             }
-
-    footer{
-        background: #28465A;
-        color: #fff;
-    }
+    /*footer*/
+        footer{
+            background: #28465A;
+            color: #fff;
+        }
+            footer .copyright{
+                background: darkgrey;
+                padding: 5px 0;
+            }
 
     /*услуги на главной*/
         .services{
-            padding-top: 20px;
+        }
+        .services .col-md-4{
+            padding: 0;
+        }
+        .services .row{
+            padding: 0 15px;
         }
         .services .block-container{
 /*            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
@@ -155,21 +173,55 @@
                 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
             }
             .services p{
-                background: #fff;
-                padding: 5px 10px 15px;
             }
             .services header{
-                color: #fff;
-                height: 100%;
-                border: 0px;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-                overflow: hidden;
+                color: #fff;                
+                background-position: center;
             }
-            .bg-1{
+            .services footer{
+                padding: 20px;
+                color: #000;
+            }
+            .services footer h3{
+                margin: 0;
+                padding: 0 0 10px 0;
+            }
+            .services header{
+                background-size: cover;
+                background-position: center;
+            }
+            .services .color-block{
+                height: 5px;
+                width: 100%;
+            }
+            .service-3 header{
+                height: 180px;
                 background: url("../content/003.jpg");
+                background-size: cover;                
+            }
+            .service-2 footer,
+            .service-2 .color-block{
+                background: lightgreen;
+            }
+            .service-1 footer,
+            .service-1 .color-block{
+                background: lightsalmon;
+            } 
+            .service-3 footer,
+            .service-3 .color-block{
+                background: lightblue;
+            }                        
+            .service-1 header{
+                height: 180px;
+                background: url("../content/2.jpg");
                 background-size: cover;
             }
+            .service-2 header{
+                height: 180px;
+                background: url("../content/promishlenniy_alpenizm_visotnie_raboti.jpg");
+                background-size: cover;
+            }
+
             .services header a{
 /*                margin: 0;
                 padding: 24px 10px;
@@ -180,3 +232,12 @@
                 width: 100%;
                 padding: 10px;
             }
+
+
+            .main-page-service-list{
+                list-style-type: none;
+                padding: 0;
+            }
+                .main-page-service-list li{
+
+                }
