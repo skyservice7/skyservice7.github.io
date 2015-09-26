@@ -97,9 +97,10 @@
             }
         /*формы*/
             .forms{
-                background: #fff;
+                background: rgba(255, 255, 255, 0.5);
                 padding: 0 0 20px 0;
-                border: 5px solid #28465A;
+                border-radius: 5px;
+                overflow: hidden;
             }
             .ss-secondary-text{
                 font-weight: normal;
