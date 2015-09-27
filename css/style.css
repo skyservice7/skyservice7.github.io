@@ -217,6 +217,7 @@
             }
 
             .services header a{
+                padding: 24px 10px;
                 color: inherit;
             }
             .blackout{
@@ -229,6 +230,7 @@
                 list-style-type: none;
                 padding: 0;
             }
+        padding: 3px 0;
 
 /*footer*/
     footer{
