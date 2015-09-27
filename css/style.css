@@ -1,3 +1,7 @@
+ul{
+    list-style-type: none;
+    padding: 0;
+}
 /*верхняя часть*/
     .page-top{
         padding: 10px 0;
@@ -21,6 +25,23 @@
             font-size: 16px;
             text-align: center;
         }
+    /*phone-block*/
+        .phone-block{ 
+        }
+            .phone-block a{
+                color: inherit;
+            }
+            .phone-block a:hover{
+                text-decoration: none;
+
+            }
+            .phone-block .phone{
+                font-size: 28px;
+            }
+            .phone-block .feedback{
+            }
+                .phone-block .feedback a{
+                }        
 /*навигационное меню*/
     .navbar-default{
         background-color: #28465A;
@@ -54,46 +75,19 @@
             bottom: 40px;
             width: 60%;
         }
-    /*phone-block*/
-        .phone-block{ 
-        }
-            .phone-block a{
-                color: inherit;
+    /*information-block*/
+        /*.main-page-service-list*/
+            .main-page-service-list a{
+                line-height: 25px;
             }
-            .phone-block a:hover{
-                text-decoration: none;
+        /*benefits*/
+            .information-block .benefits li{
+                border-bottom: 1px dashed lightgrey;
+            }
 
-            }
-            .phone-block .phone{
-                font-size: 28px;
-            }
-            .phone-block .feedback{
-            }
-                .phone-block .feedback a{
-                }        
-    /*jumbotron*/
-    
-        .jumbotron{
-            color: #fff;
-            overflow: visible;
-            background-color: transparent;
-        }
-
-        .btn-tr{
-            color: #fff;
-            background-color: transparent;
-            border-color: #fff;
-            border-width: 2px;
-            border-radius: 0;
-        }
-        .btn-tr:hover{
-            background-color: #fff;
-            color: #28465A;
-        }
     /*instagram*/
     .instagram-block{
         background: #F3F3F3;
-        padding: 20px 0;
     }
     /*form-block*/
     .form-block{
@@ -121,7 +115,7 @@
                 color: grey;
             }
 
-            .btn-tr-inv{
+            /*.btn-tr-inv{
             color: #28465A;
             background-color: transparent;
             border-color: #28465A;
@@ -132,7 +126,7 @@
             .btn-tr-inv:hover{
                 background-color: #28465A;
                 color: #fff;
-            }
+            }*/
             /*табы*/
                 .nav-tabs>li{
                     width: 50%;
@@ -157,64 +151,68 @@
         .services .row{
             padding: 0 15px;
         }
-        .services .block-container{
+/*        .services .block-container{
             border: 0px;
             border-radius: 5px;
             overflow: hidden;
             margin-bottom: 10px;
-        }
-            .services .block-container:hover{
+        }*/
+/*            .services .block-container:hover{
                 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
-            }
+            }*/
             .services p{
-            }
-            .services header{
-                color: #fff;                
-                background-position: center;
-            }
-            .services footer{
-                padding: 20px;
-                color: #000;
-            }
-            .services footer h3{
-                margin: 0;
-                padding: 0 0 10px 0;
             }
             .services header{
                 background-size: cover;
                 background-position: center;
             }
+            .services footer{
+                color: #000;
+                padding: 20px 0;
+            }
+                .services footer h3{
+                    margin: 0;
+                    padding: 0 0 10px 0;
+                }
+                .services footer .fa{
+                    font-size: 36px;
+                }
             .services .color-block{
                 height: 5px;
                 width: 100%;
             }
-            .service-3 header{
-                height: 180px;
-                background: url("../content/003.jpg");
-                background-size: cover;                
-            }
-            .service-2 footer,
-            .service-2 .color-block{
-                background: lightgreen;
-            }
-            .service-1 footer,
-            .service-1 .color-block{
-                background: lightsalmon;
-            } 
-            .service-3 footer,
-            .service-3 .color-block{
-                background: lightblue;
-            }                        
+            /*1*/
             .service-1 header{
                 height: 180px;
                 background: url("../content/2.jpg");
                 background-size: cover;
             }
+            .service-1 footer,
+            .service-1 .color-block{
+                background: lightsalmon;
+            }
+            /*2*/
             .service-2 header{
                 height: 180px;
                 background: url("../content/promishlenniy_alpenizm_visotnie_raboti.jpg");
                 background-size: cover;
             }
+            .service-2 footer,
+            .service-2 .color-block{
+                background: lightgreen;
+            }
+            /*3*/
+            .service-3 header{
+                height: 180px;
+                background: url("../content/003.jpg");
+                background-size: cover;                
+            }
+            .service-3 footer,
+            .service-3 .color-block{
+                background: lightblue;
+            }
+
+            
 
             .services header a{
                 padding: 24px 10px;
@@ -237,7 +235,10 @@
         background: #28465A;
         color: #fff;
     }
-        footer .copyright{
-            background: darkgrey;
-            padding: 5px 0;
-        }
+    footer .info-block{
+        padding: 10px 0;
+    }
+    footer .copyright{
+        background: darkgrey;
+        padding: 5px 0;
+    }
