@@ -4,13 +4,14 @@ ul{
 }
 /*верхняя часть*/
     h1{
-        text-shadow: 5px 5px 10px black;
     }
     h4{
         color: #5494AD;
     }
     .page-top{
         padding: 10px 0;
+        background: #000;
+        color: #fff;
     }
         .logo-image{
             float: left;
@@ -22,10 +23,16 @@ ul{
         }
         .logo-name{
             margin-left: 90px;
-            font-size: 35px;
-            padding-top: 10px;
+            font-size: 35px;            
             font-weight: bold;
+            line-height: 20px;
+            padding-top: 18px;
         }
+            .logo-name span:last-child{
+                font-size: 14px;
+                font-weight: 300;
+                /*display: block;*/
+            }
         .desc{
             padding-top: 32px;
             font-size: 16px;
@@ -33,16 +40,18 @@ ul{
         }
     /*phone-block*/
         .phone-block{ 
+            float: right;
+            font-size: 20px;
         }
             .phone-block a{
-                color: inherit;
+                color: inherit;    
             }
             .phone-block a:hover{
                 text-decoration: none;
 
             }
             .phone-block .phone{
-                font-size: 28px;
+                padding-left: 20px;
             }
             .phone-block .feedback{
             }
@@ -50,10 +59,9 @@ ul{
                 }        
 /*навигационное меню*/
     .navbar-default{
-        background-color: #28465A;
         border-color: transparent;
         margin-bottom: 0;
-        color: #fff;
+        background-color: transparent;
     }
     .navbar-default .navbar-brand,
     .navbar-default .navbar-nav>li>a{
@@ -70,18 +78,22 @@ ul{
 /*Главная страница*/
     .welcome-block{
             background: url("../content/0.jpg");
-            height: 300px;
             background-size: cover;
-            padding: 20px;
-            color: #fff;
             position: relative;
     }
         .welcome-block h1{
-            position: absolute;
-            bottom: 40px;
-            width: 60%;
-            font-weight: bold;;
+            font-weight: 400;
+            text-align: center;
+            margin: 60px 0;
+            font-size: 29px;
+            text-transform: uppercase;
         }
+    @media (min-width: 320px) {
+        .welcome-block h1{
+            font-size: 38px;
+            margin: 40px 0;
+        }
+    }
     /*information-block*/
         /*.main-page-service-list*/
             a h3, a .fa {
@@ -99,8 +111,7 @@ ul{
                 border-bottom: 1px dashed lightgrey;
             }
             .information-block .benefits .fa{
-                color: #FFFFFF;
-                text-shadow: 5px 5px 10px black;
+    color: #000;
             }
 
     /*instagram*/
@@ -162,6 +173,8 @@ ul{
             }
     /*услуги на главной*/
         .services{
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.3);
         }
         .services .col-md-4{
             padding: 0;
@@ -180,10 +193,18 @@ ul{
             }*/
             .services p{
             }
-            .services header{
+            .serv-img{
+                height: 150px;
+                overflow: hidden;
+            }
+                .services .serv-img img{
+                    min-width: 315px;
+                    height: 150px;
+                }
+            /*.services header{
                 background-size: cover;
                 background-position: center;
-            }
+            }*/
             .services footer{
                 padding: 20px 0;
             }
@@ -199,21 +220,21 @@ ul{
                 width: 100%;
             }
             /*1*/
-            .service-1 header{
+/*            .service-1 header{
                 height: 180px;
                 background: url("../content/2.jpg");
                 background-size: cover;
-            }
+            }*/
             .service-1 footer,
             .service-1 .color-block{
                 background: #213644;
             }
             /*2*/
-            .service-2 header{
+            /*.service-2 header{
                 height: 180px;
                 background: url("../content/3.jpg");
                 background-size: cover;
-            }
+            }*/
             .service-2 footer,
             .service-2 .color-block{
                 background: #689DC1;
