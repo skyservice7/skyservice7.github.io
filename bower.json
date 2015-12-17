@@ -1,0 +1,27 @@
+{
+  "name": "skyservice7.github.io",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "bootstrap": "3.3.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+      "/dist/css/bootstrap.css"
+      ]
+    }
+  }
+}
