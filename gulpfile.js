@@ -27,14 +27,14 @@ var path = {
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
-        style: 'src/style/main.scss',
+        style: 'src/css/main.less',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
-        style: 'src/style/**/*.scss',
+        style: 'src/css/**/*.less',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
@@ -50,6 +50,26 @@ var config = {
     port: 9000,
     logPrefix: "Frontend_Devil"
 };
+
+gulp.task('mainFilesJS', function() {
+    gulp.src(mainFiles('**/*.js'))
+        .pipe(gulp.dest('build/js'))
+});
+gulp.task('mainFilesCSS', function() {
+    gulp.src(mainFiles('**/*.css'))
+        .pipe(gulp.dest('build/css'))
+});
+gulp.task('copyBootstrapFonts', function() {
+    gulp.src('./bower_components/bootstrap/fonts/**')
+        .pipe(gulp.dest('./build/fonts'))
+});
+gulp.task('mainFiles',[
+    'mainFilesJS',
+    'mainFilesCSS',
+    'copyBootstrapFonts'
+]);
+
+
 
 gulp.task('webserver', function () {
     browserSync(config);
@@ -109,7 +129,8 @@ gulp.task('build', [
     'js:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'mainFiles'
 ]);
 
 

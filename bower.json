@@ -18,10 +18,13 @@
     "bootstrap": "3.3.6"
   },
   "overrides": {
-    "bootstrap": {
-      "main": [
-      "/dist/css/bootstrap.css"
-      ]
+        "bootstrap": {
+            "main": [
+            "./dist/css/bootstrap.min.css",
+            "./dist/css/bootstrap-theme.min.css",
+            "./dist/js/bootstrap.min.js",
+            "/dist/fonts/*.*"
+            ]
+        }
     }
-  }
 }
