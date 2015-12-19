@@ -15,16 +15,17 @@
   "dependencies": {
     "normalize.css": "*",
     "jquery": "2.*",
-    "bootstrap": "3.3.6"
+    "bootstrap": "3.3.6",
+    "lightbox2": "~2.8.2"
   },
   "overrides": {
-        "bootstrap": {
-            "main": [
-            "./dist/css/bootstrap.min.css",
-            "./dist/css/bootstrap-theme.min.css",
-            "./dist/js/bootstrap.min.js",
-            "/dist/fonts/*.*"
-            ]
-        }
+    "bootstrap": {
+      "main": [
+        "./dist/css/bootstrap.min.css",
+        "./dist/css/bootstrap-theme.min.css",
+        "./dist/js/bootstrap.min.js",
+        "/dist/fonts/*.*"
+      ]
     }
+  }
 }

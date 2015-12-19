@@ -59,14 +59,26 @@ gulp.task('mainFilesCSS', function() {
     gulp.src(mainFiles('**/*.css'))
         .pipe(gulp.dest('build/css'))
 });
+
 gulp.task('copyBootstrapFonts', function() {
     gulp.src('./bower_components/bootstrap/fonts/**')
         .pipe(gulp.dest('./build/fonts'))
 });
+gulp.task('copyBootstrapTabcollapse', function() {
+    gulp.src('./bower_components/bootstrap-tabcollapse/**/*.js')
+        .pipe(gulp.dest('./build/js'))
+});
+
+// gulp.task('copyLightboxImages', function() {
+//     gulp.src('./bower_components/lightbox2/dist/images/**')
+//         .pipe(gulp.dest('./build/css/images'))
+// });
+
 gulp.task('mainFiles',[
     'mainFilesJS',
     'mainFilesCSS',
-    'copyBootstrapFonts'
+    'copyBootstrapFonts',
+    'copyBootstrapTabcollapse'
 ]);
 
 
