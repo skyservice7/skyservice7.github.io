@@ -1,0 +1,17 @@
+<script src="js/jquery.js">
+</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-tabcollapse.js"></script>
+<script>
+$('#myTab').tabCollapse();
+
+if($(".page-container").outerHeight() < window.innerHeight){
+
+	console.log('$(".page-container").outerHeight() ',$(".page-container").outerHeight());
+	console.log('window.innerWidth ', window.innerHeight);
+
+	$("footer").css("margin-top", function(){
+		return window.innerHeight - $(".page-container").outerHeight();
+	})
+}
+</script>

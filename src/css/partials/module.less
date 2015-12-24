@@ -1,0 +1,219 @@
+.navbar{
+	min-height: 66px;
+	margin-bottom: 0;
+
+	.navbar-brand{
+		span{
+			display: block;
+
+			&.name{
+				font-size: 30px;
+			}
+			&.desc{
+				font-size: 12px;
+			}
+		}
+	}
+	.phone{
+		font-size: 20px;
+		padding-top: 22px;
+		a{
+			margin-left: 30px;
+		}
+
+	}
+
+	.navbar-right{
+		@media (min-width: 768px){
+			&>li>a {
+			    padding-top: 22px;
+			    padding-bottom: 22px;
+			}
+		}
+	}
+	.navbar-nav{
+		@media (min-width: 768px){
+			&>li>a {
+			    padding-top: 15px;
+			    padding-bottom: 18px;
+			}
+		}
+	}
+	.contacts{
+		font-size: 16px;
+		position: absolute;
+		top: 0;
+		right: 100px;
+		@media(min-width: 768px){
+				position: static;
+			}
+
+		li{
+			display: inline-block;
+			@media(min-width: 768px){
+				display: block;
+			}
+			a{
+				display: block;
+			}
+
+			.link-text{
+				display: none;
+				@media(min-width: 768px){
+					display: block;
+					margin-left: 23px;
+				}
+			}
+
+			.fa{
+				font-size: 20px;
+				float: left;
+			}
+			.info{
+				font-size: 12px;
+				display: block;	
+				margin-top: -5px;
+				color: salmon;							
+			}
+		}
+	}
+}
+
+
+.company-main{
+	background: url('../img/city.jpg');
+	background-size: cover;	
+
+	.slogan{
+		text-transform: uppercase;
+		text-align: center;
+		margin: 40px auto 50px;
+	}
+
+	.main-services{
+		.half-transparent-bg;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		padding: 10px;
+		
+		header{
+			position: relative;
+			img{
+				width: 100%;
+				height: auto;
+			}
+			.header{
+				position: absolute;
+				bottom: 0;
+				padding: 10px;
+				text-shadow: 1px 1px 1px grey;
+				font-size: 18px;
+			}
+		}
+		.content{
+			padding: 10px;
+		}		
+	}
+}
+
+
+.main-info{
+	background: url('../img/bg-light-4.jpg');
+
+	ul{
+		padding-left: 15px;
+	}
+	.main-service-list{
+		li{		
+			@media (min-width: 480px) and (max-width:767px){	
+				width: 50%;
+				float: left;
+			}
+		}
+		&:after{
+			.clearfix;
+		}
+	}
+}
+
+
+
+.main-feedback{
+	padding: 20px 0;
+	background: lightgrey;
+
+	h4{
+		color: grey;
+		margin: 0;
+		font-size: 16px;
+	}
+}
+.phones{
+		padding: 0 0 10px;
+		& > div{
+			float: left;
+			margin-right: 30px;
+		}
+		.fa{
+			font-size: 30px;
+			padding: 5px 0 0 0;
+		}
+		a{
+			font-size: 30px;
+		}
+		.name{
+			display: block;
+			text-align: right;
+			margin-top: -5px;
+			color: salmon;
+		}
+		&:after{
+			.clearfix;
+		}
+	}
+
+
+.main-instagram{
+	.test-pic-item{
+		width: 100px;
+		height: 100px;
+		border: 5px solid lightgrey;
+		background: grey;
+		float: left;
+		margin: 5px;
+	}
+}
+
+
+
+footer{	
+	background: @copyright-bg;
+	color: @copyright-color;
+	padding: 5px 0;
+
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	li{
+		display: inline-block;
+		margin-right: 5px;
+	}
+}
+
+.half-transparent-bg{
+	// сделать, чтобы можно было задавать разную прозрачность
+	background: rgba(0, 0, 0, 0.4);
+	border: 1px solid transparent;
+	border-radius: 10px;
+	color: white;
+}
+
+.tr-bg{
+	background: rgba(0, 0, 0, 0.1);
+	border: 1px solid transparent;
+	color: white;
+	padding: 5px 20px;
+	margin: 5px 0;
+}

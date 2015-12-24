@@ -1,0 +1,40 @@
+.service-page{
+	.nav-tabs{
+		width: 20%;
+		float: left;
+		border: none;
+		border-right: 2px solid lightgrey;
+
+		&>li{
+			float: none;
+		}
+
+		&>li>a,
+		&>li.active>a, 
+		&>li.active>a:focus, 
+		&>li.active>a:hover{
+			border: none;
+			padding: 5px;
+		}
+		&>li>a:focus, 
+		&>li>a:hover{
+			background: transparent;
+			font-weight: 600;
+		}
+	}
+	.tab-content{
+		width: 80%;
+		float: left;
+		border-left: 2px solid lightgrey;
+		margin-left: -2px;
+		padding: 20px 10px;
+	}
+
+	.tabs-collapse{
+		margin-bottom: 20px;
+
+		&:after{
+			.clearfix;
+		}
+	}
+}

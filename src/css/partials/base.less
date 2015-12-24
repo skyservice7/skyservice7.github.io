@@ -1,0 +1,32 @@
+/*variables*/
+@nav-bg: black;
+@nav-color: white;
+
+@footer-bg: darkgrey;
+
+@copyright-bg: black;
+@copyright-color: white;
+
+
+body{
+	background: url("../img/bg-light-4.jpg")
+}
+
+.clearfix{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.col-smm-6{	
+	@media(min-width: 480px) and (max-width: 767px){
+		width: 50%;
+		position: relative;
+		float: left;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
