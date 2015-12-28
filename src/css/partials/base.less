@@ -8,8 +8,26 @@
 @copyright-color: white;
 
 
+@dark-bg-header: #f98561;
+@dark-bg-text: #a3afb2;
+@dark-bg: #2e3e4f;
+
+@light-bg-header: #2190c1;
+@light-bg-text: #515862;
+@light-bg: #fff;
+
+@link-color: @light-bg-header;
+@link-hover: @dark-bg-header;
+
+@phone-shadow: #162331;
+
+/*google fonts*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic&subset=cyrillic,latin);
+
 body{
-	background: url("../img/bg-light-4.jpg")
+	background: url("../img/bg-light-4.jpg");
+	font-family: 'Open Sans', sans-serif;
 }
 
 .clearfix{
@@ -29,4 +47,16 @@ body{
 		padding-right: 15px;
 		padding-left: 15px;
 	}
+}
+
+h3{
+	.red-header;
+}
+.red-header{
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: bold;
+	color: @dark-bg-header;
+	margin-bottom: 20px;
 }

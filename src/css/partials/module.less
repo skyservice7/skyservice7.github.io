@@ -57,24 +57,24 @@
 				display: block;
 			}
 
-			.link-text{
-				display: none;
-				@media(min-width: 768px){
-					display: block;
-					margin-left: 23px;
-				}
-			}
+			// .link-text{
+			// 	display: none;
+			// 	@media(min-width: 768px){
+			// 		display: block;
+			// 		margin-left: 23px;
+			// 	}
+			// }
 
-			.fa{
-				font-size: 20px;
-				float: left;
-			}
-			.info{
-				font-size: 12px;
-				display: block;	
-				margin-top: -5px;
-				color: salmon;							
-			}
+			// .fa{
+			// 	font-size: 20px;
+			// 	float: left;
+			// }
+			// .info{
+			// 	font-size: 12px;
+			// 	display: block;	
+			// 	margin-top: -5px;
+			// 	color: salmon;							
+			// }
 		}
 	}
 }
@@ -90,35 +90,82 @@
 		margin: 40px auto 50px;
 	}
 
-	.main-services{
-		.half-transparent-bg;
-		border-bottom-right-radius: 0;
-		border-bottom-left-radius: 0;
-		padding: 10px;
+	// .main-services{
+	// 	.half-transparent-bg;
+	// 	border-bottom-right-radius: 0;
+	// 	border-bottom-left-radius: 0;
+	// 	padding: 40px 0;
 		
-		header{
-			position: relative;
+	// 	header{
+	// 		position: relative;
+	// 		img{
+	// 			width: 100%;
+	// 			height: auto;
+	// 		}
+	// 		.header{
+	// 			position: absolute;
+	// 			bottom: 0;
+	// 			padding: 10px;
+	// 			text-shadow: 1px 1px 1px grey;
+	// 			font-size: 18px;
+	// 		}
+	// 	}
+	// 	.content{
+	// 		padding: 10px;
+	// 	}		
+	// }
+}
+.main-services{
+		// .half-transparent-bg;
+		// border-bottom-right-radius: 0;
+		// border-bottom-left-radius: 0;
+		background: @dark-bg;
+		color: @dark-bg-text;
+		padding: 40px 0;
+
+		.picture{
+			border: 10px solid #fff;
+			box-shadow: 0 0 0 2px @phone-shadow;
 			img{
 				width: 100%;
 				height: auto;
 			}
-			.header{
-				position: absolute;
-				bottom: 0;
-				padding: 10px;
-				text-shadow: 1px 1px 1px grey;
-				font-size: 18px;
-			}
+		}
+
+		h4{
+			margin: 15px 0 5px;
+			a{
+				color: @dark-bg-header;
+			}			
 		}
 		.content{
-			padding: 10px;
-		}		
+			font-size: 12px;
+		}
+		
+
+		// header{
+		// 	position: relative;
+		// 	img{
+		// 		width: 100%;
+		// 		height: auto;
+		// 	}
+		// 	.header{
+		// 		position: absolute;
+		// 		bottom: 0;
+		// 		padding: 10px;
+		// 		text-shadow: 1px 1px 1px grey;
+		// 		font-size: 18px;
+		// 	}
+		// }
+		// .content{
+		// 	padding: 10px;
+		// }		
 	}
-}
 
 
 .main-info{
 	background: url('../img/bg-light-4.jpg');
+	color: @light-bg-text;
 
 	ul{
 		padding-left: 15px;
@@ -140,37 +187,26 @@
 
 .main-feedback{
 	padding: 20px 0;
-	background: lightgrey;
+	background: @dark-bg;
+	color: @dark-bg-text;
 
-	h4{
-		color: grey;
-		margin: 0;
-		font-size: 16px;
-	}
-}
-.phones{
-		padding: 0 0 10px;
-		& > div{
-			float: left;
-			margin-right: 30px;
-		}
-		.fa{
-			font-size: 30px;
-			padding: 5px 0 0 0;
-		}
+	.phones{
 		a{
-			font-size: 30px;
-		}
-		.name{
-			display: block;
-			text-align: right;
-			margin-top: -5px;
-			color: salmon;
-		}
-		&:after{
-			.clearfix;
-		}
+			.red-header;
+			color: @link-color;
+			text-shadow: 2px 2px 1px @phone-shadow, 4px 4px 1px @phone-shadow;
+			font-size: 40px;
+		}		
 	}
+	.other{
+		& > div{
+			margin-bottom: 20px;
+		}
+		h5{
+			margin-bottom: 0;
+		}
+	}		
+}
 
 
 .main-instagram{
@@ -206,7 +242,7 @@ footer{
 	// сделать, чтобы можно было задавать разную прозрачность
 	background: rgba(0, 0, 0, 0.4);
 	border: 1px solid transparent;
-	border-radius: 10px;
+	// border-radius: 10px;
 	color: white;
 }
 

@@ -13,7 +13,7 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
     mainFiles = require("main-bower-files"),
-    mainBowerFiles = require('gulp-main-bower-files'),
+    //mainBowerFiles = require('gulp-main-bower-files'),
     reload = browserSync.reload;
 
 var path = {
