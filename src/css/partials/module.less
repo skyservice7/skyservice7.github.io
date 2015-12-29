@@ -1,29 +1,73 @@
+.navbar-blue{
+	background-color: @dark-bg;
+    border-color: @dark-bg;
+}
 .navbar{
 	min-height: 66px;
 	margin-bottom: 0;
 
-	.navbar-brand{
-		span{
-			display: block;
+	// .container{
+	// 	position: relative;
+	// }
 
-			&.name{
-				font-size: 30px;
-			}
-			&.desc{
-				font-size: 12px;
+	.navbar-header{
+		
+		position: relative;
+
+		.navbar-brand{
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: #fff;
+			background: @dark-bg-header;
+			padding: 28px;
+			height: auto;
+
+			span{
+				display: block;
+
+				&.name{
+					font-size: 30px;
+				}
+				&.desc{
+					font-size: 12px;
+				}
 			}
 		}
 	}
-	.phone{
-		font-size: 20px;
-		padding-top: 22px;
-		a{
-			margin-left: 30px;
-		}
-
+	.collapse{
+		margin-left: 200px;
 	}
+	// .phones{
+	// 	padding-top: 10px;
+	// 	// font-size: 20px;
+	// 	// padding-top: 22px;
+	// 	// a{
+	// 	// 	margin-left: 30px;
+	// 	// }
+
+	// }
 
 	.navbar-right{
+		&:first-child{
+			margin-top: 10px;
+			padding: 0;
+			a{
+				font-size: 18px;
+				padding: 0 10px;
+			}
+			.phone{
+				border-right: 1px solid @dark-bg-text;
+			}
+		}
+		&:last-child{
+			padding-bottom: 10px;
+			a{
+				text-decoration: underline;
+				padding: 5px 10px 5px 30px;
+			}
+		}		
+		margin-right: 0;
 		@media (min-width: 768px){
 			&>li>a {
 			    padding-top: 22px;
@@ -32,10 +76,17 @@
 		}
 	}
 	.navbar-nav{
+		li > a{
+			color: @dark-bg-text;
+
+			&:hover{
+				background: transparent;
+				color: @dark-bg-header;
+			}
+		}
 		@media (min-width: 768px){
 			&>li>a {
-			    padding-top: 15px;
-			    padding-bottom: 18px;
+			    padding: 5px;
 			}
 		}
 	}
@@ -56,25 +107,6 @@
 			a{
 				display: block;
 			}
-
-			// .link-text{
-			// 	display: none;
-			// 	@media(min-width: 768px){
-			// 		display: block;
-			// 		margin-left: 23px;
-			// 	}
-			// }
-
-			// .fa{
-			// 	font-size: 20px;
-			// 	float: left;
-			// }
-			// .info{
-			// 	font-size: 12px;
-			// 	display: block;	
-			// 	margin-top: -5px;
-			// 	color: salmon;							
-			// }
 		}
 	}
 }
@@ -90,35 +122,8 @@
 		margin: 40px auto 50px;
 	}
 
-	// .main-services{
-	// 	.half-transparent-bg;
-	// 	border-bottom-right-radius: 0;
-	// 	border-bottom-left-radius: 0;
-	// 	padding: 40px 0;
-		
-	// 	header{
-	// 		position: relative;
-	// 		img{
-	// 			width: 100%;
-	// 			height: auto;
-	// 		}
-	// 		.header{
-	// 			position: absolute;
-	// 			bottom: 0;
-	// 			padding: 10px;
-	// 			text-shadow: 1px 1px 1px grey;
-	// 			font-size: 18px;
-	// 		}
-	// 	}
-	// 	.content{
-	// 		padding: 10px;
-	// 	}		
-	// }
 }
 .main-services{
-		// .half-transparent-bg;
-		// border-bottom-right-radius: 0;
-		// border-bottom-left-radius: 0;
 		background: @dark-bg;
 		color: @dark-bg-text;
 		padding: 40px 0;
@@ -140,26 +145,7 @@
 		}
 		.content{
 			font-size: 12px;
-		}
-		
-
-		// header{
-		// 	position: relative;
-		// 	img{
-		// 		width: 100%;
-		// 		height: auto;
-		// 	}
-		// 	.header{
-		// 		position: absolute;
-		// 		bottom: 0;
-		// 		padding: 10px;
-		// 		text-shadow: 1px 1px 1px grey;
-		// 		font-size: 18px;
-		// 	}
-		// }
-		// .content{
-		// 	padding: 10px;
-		// }		
+		}		
 	}
 
 
@@ -242,7 +228,6 @@ footer{
 	// сделать, чтобы можно было задавать разную прозрачность
 	background: rgba(0, 0, 0, 0.4);
 	border: 1px solid transparent;
-	// border-radius: 10px;
 	color: white;
 }
 
