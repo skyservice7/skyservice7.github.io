@@ -1,9 +1,16 @@
 .service-page{
+	padding: 60px 0 20px 0;
+	h3{
+		color: @light-bg-text;
+		margin: 0 0 40px 0;
+	}
+
 	.nav-tabs{
 		width: 20%;
 		float: left;
 		border: none;
-		border-right: 2px solid lightgrey;
+		// border-right: 1px solid lightgrey;
+		// box-shadow: inset 1px 0 0 0 red;
 
 		&>li{
 			float: none;
@@ -15,6 +22,11 @@
 		&>li.active>a:hover{
 			border: none;
 			padding: 5px;
+			background: transparent;
+			font-weight: bold;
+		}
+		&>li>a{
+			font-weight: normal;
 		}
 		&>li>a:focus, 
 		&>li>a:hover{
@@ -25,9 +37,10 @@
 	.tab-content{
 		width: 80%;
 		float: left;
-		border-left: 2px solid lightgrey;
+		border-left: 1px solid lightgrey;
+		box-shadow: -1px 0 0 0 #fff;
 		margin-left: -2px;
-		padding: 20px 10px;
+		padding: 0 10px;
 	}
 
 	.tabs-collapse{
