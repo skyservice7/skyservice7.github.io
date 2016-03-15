@@ -16,50 +16,40 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
-    <!-- загрузить пакет!!!-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script> -->    
 </head>
 
 <body>
     <div class="page-container">
-    	<header class="page-top">
-    	    <nav class="navbar navbar-blue">
+    	<!-- //= template/page-top.html -->
+    	    <nav>
     	        <div class="container">
-    	            <!-- Brand and toggle get grouped for better mobile display -->
-    	            <div class="navbar-header">
-    	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-    	                    <span class="sr-only">Toggle navigation</span>
-    	                    <span class="icon-bar"></span>
-    	                    <span class="icon-bar"></span>
-    	                    <span class="icon-bar"></span>
-    	                </button>
-    	                <a class="navbar-brand" href="index.html">
+    	            <div class="info">
+    	                <a class="logo" href="index.html">
     	                    <span class="name">SkyService</span>
     	                    <span class="desc">Все виды высотных работ!</span>
     	                </a>
+    	                <div class="phone">
+    	                    <span>Звоните!</span>
+    	                    <a href="callto:+7 915 971 20 16">+7 915 971 20 16</a>
+    	                    <a href="callto:+7 910 968 08 68">+7 910 968 08 68</a>
+    	                </div>
     	            </div>
-    	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    	                    <ul class="nav navbar-nav navbar-right">
-    	                        <li class="phone"><a href="callto:+71234567890">+79801234567</a></li>
-    	                        <li><a href="callto:+71234567890">+79801234567</a></li>
-    	                    </ul>
-    	                    <div class="clearfix"></div>
-    	                    <ul class="nav navbar-nav navbar-right">
-    	                        <li><a href="services.html">Услуги</a></li>
-    	                        <li><a href="about.html">О нас</a></li>
-    	                    </ul>
-    	            </div><!-- /.navbar-collapse -->
-    	        </div><!-- /.container-fluid -->
+    	            <ul class="menu">
+    	                <li><a href="services.html">Услуги</a></li>
+    	                <li><a href="about.html">О нас</a></li>
+    	            </ul>
+    	        </div>
     	    </nav>
-    	</header>
     
         <!-- about page -->
         <div class="about-page">
             <div class="container">
                 <div class="row">
-                    <section class="col-sm-7">
+                    <section class="col-sm-8">
                         <section class="about-as">
-                            <h4>Добро пожаловать!</h4>
+                            <h3>Добро пожаловать!</h3>
                             <p>Команда «SkyService» специализируется на выполнении высотных работ любого профиля и сложности.
                             </p>
                             <p>На протяжении последних 8 лет наши специалисты успешно выполняют высотные работы, требующие уникальных возможностей промышленного альпинизма. Наши промышленные альпинисты имеют высочайший уровень физической подготовки и документально подтвержденную профессиональную квалификацию. Все наши специалисты состоят в Российской Федерации Альпинизма и Скалолазания, имеют большой опыт высотных работ и отличный послужной список. Кроме того, наша организация полностью обеспечена всем необходимым оборудованием для высотных работ и транспортными средствами.
@@ -67,8 +57,8 @@
                             <p>Мы можем проконсультировать Вас во всех возникающих вопросах по проведению высотных работ.</p>
                         </section>
                     </section>
-                    <section class="col-md-5">
-                        <h4>Наши преимущества</h4>
+                    <section class="col-md-4">
+                        <h3>Наши преимущества</h3>
                         <ul>
                             <li>
                                 <!-- <h5>Разумная цена</h5> -->
@@ -88,84 +78,148 @@
                         </ul>
                     </section>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <h4>Наши телефоны</h4>
-                        <ul>
-                            <li><a href="callto:#">+79001234567</a> (Name)</li>
-                            <li><a href="callto:#">+79001234567</a> (Name)</li>
-                        </ul>
-                        <h4>Электронная почта</h4>
-                        <ul>
-                            <li><a href="mailto:info@info.com">info@info.com</a></li>
-                        </ul>
-                        <h4>Группа в VK</h4>
-                        <ul>
-                            <li><a href="#">vk.com/bla-bla-bla</a></li>
-                        </ul>
-                    </div>
-                    <section class="col-md-9 feedback-form">
-                        <h4>Форма обратной связи</h4>
+                <!-- <div class="row">
+                    <section class="col-md-8 feedback-form">
+                        <h3>Форма обратной связи</h3>
                         <form>
                             <div class="row">
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                <div class="col-md-4">
+                                    <div class="form-group ">
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
-                                </div>
-                                <div class="form-group col-md-12">
+                                <div class="form-group col-md-8">
                                     <textarea class="form-control" rows="3" placeholder="Вопросы, отзывы, пожелания..."></textarea>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-default">Submit</button>
                         </form>
                     </section>
-                </div>
+                    <div class="col-md-4">
+                        <h3>Наши телефоны</h3>
+                        <ul>
+                            <li><a href="callto:#">+79001234567</a> (Name)</li>
+                            <li><a href="callto:#">+79001234567</a> (Name)</li>
+                        </ul>
+                        <h3>Электронная почта</h3>
+                        <ul>
+                            <li><a href="mailto:info@info.com">info@info.com</a></li>
+                        </ul>
+                        <h3>Группа в VK</h3>
+                        <ul>
+                            <li><a href="#">vk.com/bla-bla-bla</a></li>
+                        </ul>
+                    </div>
+                </div> -->
             </div>
         </div>
         <!-- about page end -->
-    
+		
+		<section class="main-feedback">
+		    <div class="container">
+		        <div class="col-sm-8">
+		            <h3>Наши контакты</h3>
+		            <div class="row">
+		                <div class="phones col-md-8">
+		                    <div>
+		                        <a href="callto:+7 915 971 20 16">+7 915 971 20 16</a>
+		                        <span class="name">(Name)</span>
+		                    </div>
+		                    <div>
+		                        <a href="callto:+7 910 968 08 68">+7 910 968 08 68</a>
+		                        <span class="name">(Name)</span>
+		                    </div>
+		                </div>
+		                <div class="other col-md-4">
+		                    <div class="row">
+		                        <div class="col-xs-6 col-lg-12">
+		                            <h5>Электронная почта</h5>
+		                            <a href="mailto:info@skyservice76.ru">info@skyservice76.ru</a>
+		                        </div>
+		                        <div class="col-xs-6 col-lg-12">
+		                            <h5>Группа в VK</h5>
+		                            <a href="#">vk.com/bla-bla-bla</a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="col-sm-4">
+		            <div class="feedback-item">
+		                <h3>Обратный звонок</h3>
+		                <!-- <form>
+		                    <div class="row">
+		                        <div class="form-group col-sm-3 col-smm-6">
+		                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Номер телефона">
+		                        </div>
+		                        <div class="form-group col-sm-5 col-smm-6">
+		                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ваше имя или комментарий">
+		                        </div>
+		                        <div class="col-sm-4">
+		                            <button type="submit" class="btn btn-default">Перезвоните мне</button>
+		                        </div>
+		                    </div>
+		                </form> -->
+		                <form action="//formspree.io/svetlana.i.vlasenko@gmail.com" method="POST">
+		                    <div class="form-group">
+		                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+		                    </div>
+		                    <div class="form-group">
+		                        <input type="text" name="phone" class="form-control" placeholder="Телефона">
+		                    </div>
+		                    <input type="submit" value="Отправить" class="btn btn-primary">
+		                </form>
+		            </div>
+		        </div>
+		    </div>
+		</section>
         <footer>
         	<div class="container">
         		<div class="row">
-        			<section class="copyright col-md-2">Skyservice 2015</section>
-        			<section class="col-md-8 footer-menu">
+        			<section class="copyright col-sm-3">Skyservice 2015</section>
+        			<section class="col-xs-6 col-sm-7 footer-menu">
         				<ul>
-        					<li><a href="#">Menu</a></li>
-        					<li><a href="#">Menu</a></li>
-        					<li><a href="#">Menu</a></li>
-        					<li><a href="#">Menu</a></li>
-        					<li><a href="#">Menu</a></li>
+        					<li><a href="services.html">Услуги</a></li>
+                            <li><a href="about.html">О нас</a></li>
         				</ul>
         			</section>	
-        			<section class="social col-md-2">
+        			<section class="social col-sm-2 col-xs-6">
         				<ul>
         					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        					<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>					
-        					<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>					
+        					<li><a href="#"><i class="fa fa-instagram"></i></a></li>					
         				</ul>
         			</section>	
         	</div>
         </div>
         </footer>
-        <script src="js/jquery.js">
-        </script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap-tabcollapse.js"></script>
+        <script src="js/instafeed.min.js"></script>
         <script>
-        $('#myTab').tabCollapse();
+        $(document).ready(function() {
+            $('#myTab').tabCollapse();
         
-        if($(".page-container").outerHeight() < window.innerHeight){
+            if ($(".page-container").outerHeight() < window.innerHeight) {
         
-        	console.log('$(".page-container").outerHeight() ',$(".page-container").outerHeight());
-        	console.log('window.innerWidth ', window.innerHeight);
+                console.log('$(".page-container").outerHeight() ', $(".page-container").outerHeight());
+                console.log('window.innerWidth ', window.innerHeight);
         
-        	$("footer").css("margin-top", function(){
-        		return window.innerHeight - $(".page-container").outerHeight();
-        	})
-        }
+                $("footer").css("margin-top", function() {
+                    return window.innerHeight - $(".page-container").outerHeight();
+                });
+                var userFeed = new Instafeed({
+                    get: 'user',
+                    userId: 1961675546,
+                    accessToken: '1961675546.467ede5.4f7f9427f77a404a8bfb100da24cd36a',
+                    template: '<a href="{{link}}"><img class="image" src="{{image}}" /></a>'
+                });
+                userFeed.run();
+            }
+        });
         </script>
     </div>
 </body>

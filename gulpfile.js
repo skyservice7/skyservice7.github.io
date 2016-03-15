@@ -26,7 +26,7 @@ var path = {
     },
     src: {
         html: 'src/*.html',
-        js: 'src/js/main.js',
+        js: 'src/js/*.js',
         style: 'src/css/main.less',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
@@ -51,12 +51,16 @@ var config = {
     logPrefix: "Frontend_Devil"
 };
 
-gulp.task('mainFilesJS', function() {
-    gulp.src(mainFiles('**/*.js'))
+gulp.task('copyJQuery', function() {
+    gulp.src('./bower_components/jquery/dist/jquery.min.js')
         .pipe(gulp.dest('build/js'))
 });
-gulp.task('mainFilesCSS', function() {
-    gulp.src(mainFiles('**/*.css'))
+gulp.task('copyBootstrapJS', function() {
+    gulp.src('./bower_components/bootstrap/dist/js/*.min.js')
+        .pipe(gulp.dest('build/js'))
+});
+gulp.task('copyBootstrapCSS', function() {
+    gulp.src('./bower_components/bootstrap/dist/css/*.min.css')
         .pipe(gulp.dest('build/css'))
 });
 
@@ -65,18 +69,13 @@ gulp.task('copyBootstrapFonts', function() {
         .pipe(gulp.dest('./build/fonts'))
 });
 gulp.task('copyBootstrapTabcollapse', function() {
-    gulp.src('./bower_components/bootstrap-tabcollapse/**/*.js')
+    gulp.src('./bower_components/bootstrap/dist/js/collapse.js')
         .pipe(gulp.dest('./build/js'))
 });
 
-// gulp.task('copyLightboxImages', function() {
-//     gulp.src('./bower_components/lightbox2/dist/images/**')
-//         .pipe(gulp.dest('./build/css/images'))
-// });
-
-gulp.task('mainFiles',[
-    'mainFilesJS',
-    'mainFilesCSS',
+gulp.task('copyBootstrapFiles',[
+    'copyBootstrapJS',
+    'copyBootstrapCSS',
     'copyBootstrapFonts',
     'copyBootstrapTabcollapse'
 ]);
@@ -101,9 +100,9 @@ gulp.task('html:build', function () {
 gulp.task('js:build', function () {
     gulp.src(path.src.js) 
         .pipe(rigger()) 
-        .pipe(sourcemaps.init()) 
-        .pipe(uglify()) 
-        .pipe(sourcemaps.write()) 
+        // .pipe(sourcemaps.init()) 
+        // .pipe(uglify()) 
+        // .pipe(sourcemaps.write()) 
         .pipe(gulp.dest(path.build.js))
         .pipe(reload({stream: true}));
 });
@@ -142,7 +141,8 @@ gulp.task('build', [
     'style:build',
     'fonts:build',
     'image:build',
-    'mainFiles'
+    'copyBootstrapFiles',
+    'copyJQuery'
 ]);
 
 
