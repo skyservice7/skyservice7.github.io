@@ -240,7 +240,17 @@
             </div>
         </section>
         <section class="main-instagram">
-            <div id="instafeed"></div>   
+            <div id="instafeed"></div>
+            <script src="js/instafeed.min.js"></script>
+            <script type="text/javascript">
+            var userFeed = new Instafeed({
+                get: 'user',
+                userId: 1961675546,
+                accessToken: '1961675546.467ede5.4f7f9427f77a404a8bfb100da24cd36a',
+                template: '<a href="{{link}}"><img class="image" src="{{image}}" /></a>'
+            });
+            userFeed.run();
+            </script>
         </section>
         <!-- main page end -->
     
@@ -278,14 +288,7 @@
         
                 $("footer").css("margin-top", function() {
                     return window.innerHeight - $(".page-container").outerHeight();
-                });
-                var userFeed = new Instafeed({
-                    get: 'user',
-                    userId: 1961675546,
-                    accessToken: '1961675546.467ede5.4f7f9427f77a404a8bfb100da24cd36a',
-                    template: '<a href="{{link}}"><img class="image" src="{{image}}" /></a>'
-                });
-                userFeed.run();
+                });        
             }
         });
         </script>
