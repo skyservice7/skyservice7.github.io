@@ -13,14 +13,7 @@ $(document).ready(function() {
 
         $("footer").css("margin-top", function() {
             return window.innerHeight - $(".page-container").outerHeight();
-        });
-        var userFeed = new Instafeed({
-            get: 'user',
-            userId: 1961675546,
-            accessToken: '1961675546.467ede5.4f7f9427f77a404a8bfb100da24cd36a',
-            template: '<a href="{{link}}"><img class="image" src="{{image}}" /></a>'
-        });
-        userFeed.run();
+        });        
     }
 });
 </script>
