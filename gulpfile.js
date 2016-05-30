@@ -8,12 +8,8 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
     cssmin = require('gulp-minify-css'),
-    imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
-    browserSync = require("browser-sync"),
-    mainFiles = require("main-bower-files"),
-    //mainBowerFiles = require('gulp-main-bower-files'),
+    browserSync = require("browser-sync"),    
     reload = browserSync.reload;
 
 var path = {
@@ -21,22 +17,19 @@ var path = {
         html: 'build/',
         js: 'build/js/',
         css: 'build/css/',
-        img: 'build/img/',
-        fonts: 'build/fonts/'
+        img: 'build/img/'
     },
     src: {
         html: 'src/*.html',
         js: 'src/js/*.js',
         style: 'src/css/main.less',
-        img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        img: 'src/img/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/css/**/*.less',
-        img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        img: 'src/img/**/*.*'
     },
     clean: './build'
 };
@@ -50,37 +43,6 @@ var config = {
     port: 9000,
     logPrefix: "Frontend_Devil"
 };
-
-gulp.task('copyJQuery', function() {
-    gulp.src('./bower_components/jquery/dist/jquery.min.js')
-        .pipe(gulp.dest('build/js'))
-});
-gulp.task('copyBootstrapJS', function() {
-    gulp.src('./bower_components/bootstrap/dist/js/*.min.js')
-        .pipe(gulp.dest('build/js'))
-});
-gulp.task('copyBootstrapCSS', function() {
-    gulp.src('./bower_components/bootstrap/dist/css/*.min.css')
-        .pipe(gulp.dest('build/css'))
-});
-
-gulp.task('copyBootstrapFonts', function() {
-    gulp.src('./bower_components/bootstrap/fonts/**')
-        .pipe(gulp.dest('./build/fonts'))
-});
-gulp.task('copyBootstrapTabcollapse', function() {
-    gulp.src('./bower_components/bootstrap/dist/js/collapse.js')
-        .pipe(gulp.dest('./build/js'))
-});
-
-gulp.task('copyBootstrapFiles',[
-    'copyBootstrapJS',
-    'copyBootstrapCSS',
-    'copyBootstrapFonts',
-    'copyBootstrapTabcollapse'
-]);
-
-
 
 gulp.task('webserver', function () {
     browserSync(config);
@@ -120,29 +82,16 @@ gulp.task('style:build', function () {
 
 gulp.task('image:build', function () {
     gulp.src(path.src.img) 
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()],
-            interlaced: true
-        }))
+
         .pipe(gulp.dest(path.build.img))
         .pipe(reload({stream: true}));
-});
-
-gulp.task('fonts:build', function() {
-    gulp.src(path.src.fonts)
-        .pipe(gulp.dest(path.build.fonts))
 });
 
 gulp.task('build', [
     'html:build',
     'js:build',
     'style:build',
-    'fonts:build',
-    'image:build',
-    'copyBootstrapFiles',
-    'copyJQuery'
+    'image:build'
 ]);
 
 
@@ -158,9 +107,6 @@ gulp.task('watch', function(){
     });
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');
-    });
-    watch([path.watch.fonts], function(event, cb) {
-        gulp.start('fonts:build');
     });
 });
 

@@ -1,35 +1,16 @@
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="js/bootstrap-tabcollapse.js"></script>
 <script src="js/jquery-ui-1.10.3.custom.js"></script>
 <script src="js/jquery.kinetic.js"></script>
 <script src="js/jquery.mousewheel.js"></script>
 <script src="js/jquery.smoothDivScroll-1.3.js"></script>
 <script src="js/instafeed.min.js"></script>
-<script type="text/javascript">
-</script>
 <script>
-$(document).ready(function() {
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: 1961675546,
-        accessToken: '1961675546.467ede5.4f7f9427f77a404a8bfb100da24cd36a',
-        template: '<a href="{{link}}"><img class="image" src="{{image}}" /></a>',
-        limit: 15,
-        sortBy: 'most-liked',
-        after: function() {
-            $("#instafeed").smoothDivScroll({
-                hotSpotScrolling: false,
-                touchScrolling: true,
-                manualContinuousScrolling: true,
-                mousewheelScrolling: false
-            });
-        }
-    });
-    userFeed.run();
-
-    $('#myTab').tabCollapse();
-
+$(document).ready(function() {  
     if ($(".page-container").outerHeight() < window.innerHeight) {
         $(".main-feedback").css("margin-top", function() {
             return window.innerHeight - $(".page-container").outerHeight();
