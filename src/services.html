@@ -18,6 +18,9 @@
         <script>
             $(document).ready(function() {
                 $('#myTab').tabCollapse();
+                
+                var tabNum = window.location.hash.slice(1) - 1;
+                $('#myTab li:eq(' + tabNum + ') a').tab('show');
             });
         </script>
     </div>
