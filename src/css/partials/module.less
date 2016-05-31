@@ -34,8 +34,6 @@
         }
     }
     .navbar-collapse {
-        // margin-left: 200px;
-        // margin-top: 50px;
         padding: 50px 20px 20px;
         @media (min-width: 768px) {
             padding: 0px 20px 0px;
@@ -56,7 +54,6 @@
             }
         }
         .navbar-nav.phones {
-            // float: left;
             width: 130px;
             padding: 0 0 0 5px;
             line-height: 1;
@@ -116,8 +113,10 @@
 .company-main {
     padding: 0;
     background: url('../img/city.jpg');
-    background-size: cover;
+    background-size: cover;    
     .slogan {
+        font-size: 24px;
+        line-height: 27px;
         text-transform: uppercase;
         text-align: center;
         margin: 50px auto 60px;
@@ -126,13 +125,14 @@
         span {
             background: rgba(0, 0, 0, 0.37);
         }
+        @media (min-width: 480px) {
+            font-size: 30px;
+            line-height: normal;
+        }
     }
 }
 
-nav {
-    // .container{
-    //     position: relative;
-    // }    
+nav {    
     background: #2e3e4f;
     .info {
         float: left;
@@ -141,11 +141,8 @@ nav {
         @media (min-width: 480px) {
             width: 75%;
         }
-        .logo {
-            // position: absolute;
-            // top: 0;
-            // left: 0;    
-            display: block;
+        .logo {   
+            display: inline-block;
             padding: 3px 0 0 0;
             span {
                 display: block;
@@ -184,12 +181,9 @@ nav {
                 display: block;
                 margin: -6px 15px 0 0;
                 color: @nav-color;
-                // font-weight: 600;
-                // text-align: right;
                 @media (min-width: 480px) {
                     display: inline-block;
                     margin: 0px 15px 10px 0;
-                    // margin: 8px 0px 0 0;                    
                 }
             }
         }
@@ -215,12 +209,6 @@ nav {
         }
     }
 }
-
-// .services {
-//     nav {
-//         background: #2e3e4f;
-//     }
-// }
 
 .main-services {
     background: @dark-bg;
@@ -292,6 +280,8 @@ nav {
 }
 
 .main-instagram {
+    width: 100%;
+    overflow: hidden;
     .test-pic-item {
         width: 100px;
         height: 100px;
