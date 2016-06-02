@@ -15,14 +15,27 @@
 		//= template/main-feedback.html
         //= template/footer.html
         //= template/bottom.html
+        <script src="js/bootstrap-tabcollapse.js"></script>
         <script>
             $(document).ready(function() {
-                $('#myTab').tabCollapse();
-                
-                var tabNum = window.location.hash.slice(1) - 1;
-                $('#myTab li:eq(' + tabNum + ') a').tab('show');
+                $('#myTabs').tabCollapse();
+
+                /*opening tab by external link*/
+                var tabNum = window.location.hash.slice(1)
+                if (tabNum !== "") {
+                    $('#myTabs li:eq(' + (tabNum - 1) + ') a').tab('show');
+                }
+            });
+            $(document).on("shown.bs.collapse", ".panel-collapse, a[data-toggle='tab']", function(e) {
+                var offset = $(this).offset().top;
+                var headerHeight = $(this).siblings(".panel-heading").innerHeight()
+
+                $('html, body').animate({
+                    scrollTop: offset - headerHeight
+                }, 500);
             });
         </script>
+
     </div>
 </body>
 
