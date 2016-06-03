@@ -204,20 +204,9 @@
                 <div class="col-sm-4">
                     <div class="feedback-item">
                         <h3>Обратный звонок</h3>
-                        <!-- <form>
-                            <div class="row">
-                                <div class="form-group col-sm-3 col-smm-6">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Номер телефона">
-                                </div>
-                                <div class="form-group col-sm-5 col-smm-6">
-                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ваше имя или комментарий">
-                                </div>
-                                <div class="col-sm-4">
-                                    <button type="submit" class="btn btn-default">Перезвоните мне</button>
-                                </div>
-                            </div>
-                        </form> -->
                         <form action="//formspree.io/a.parfe600d@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="Call me from skyservice7.github.io" />
+                            <input type="hidden" name="_next" value="thanks.html" />
                             <div class="form-group">
                                 <input type="text" name="name" class="form-control" placeholder="Ваше имя">
                             </div>
@@ -265,17 +254,17 @@
             }
         });
         </script>
-        <script src="js/jquery-ui-1.10.3.custom.js"></script>
-        <script src="js/jquery.kinetic.js"></script>
-        <script src="js/jquery.mousewheel.js"></script>
-        <script src="js/jquery.smoothDivScroll-1.3.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/jquery.mousewheel.min.js"></script>
+        <script src="js/jquery.kinetic.min.js"></script>
+        <script src="js/jquery.smoothdivscroll-1.3-min.js"></script>
         <script src="js/instafeed.min.js"></script>
         <script>
         $(document).ready(function() {
             var userFeed = new Instafeed({
                 get: 'user',
                 userId: 1961675546,
-                accessToken: '1961675546.467ede5.4f7f9427f77a404a8bfb100da24cd36a',
+                accessToken: '1961675546.d8d1d50.d678fba83b534c5f90a240055d34268b',
                 template: '<a href="{{link}}"><img class="image" src="{{image}}" /></a>',
                 limit: 15,
                 sortBy: 'most-liked',

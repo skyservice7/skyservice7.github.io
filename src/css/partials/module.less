@@ -282,15 +282,15 @@ nav {
 .main-instagram {
     width: 100%;
     overflow: hidden;
-    .test-pic-item {
-        width: 100px;
-        height: 100px;
-        border: 5px solid lightgrey;
-        background: grey;
+    .scrollableArea a {
+        // display: block;
+        position: relative;
         float: left;
-        margin: 5px;
+        margin: 0;
+        padding: 0;
     }
 }
+
 
 footer {
     background: @copyright-bg;
@@ -314,6 +314,15 @@ footer {
             top: -5px;
         }
     }
+    .copyright{
+        text-align: left;
+    }
+    .footer-menu{
+        text-align: left;
+        @media (min-width: 768px) {
+            text-align: center;
+        }
+    }
 }
 
 .half-transparent-bg {
@@ -329,4 +338,15 @@ footer {
     color: white;
     padding: 5px 20px;
     margin: 5px 0;
+}
+
+.thanks{        
+    .content{
+        text-align: center;
+        margin: 10px auto;
+        @media (min-width: 768px) {
+            width: 50%;
+            margin: 40px auto;
+        }
+    }
 }
